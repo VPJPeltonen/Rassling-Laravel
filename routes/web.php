@@ -11,19 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-
-	$painijat = DB::table('painijat')->get();
-
-    return view('welcome' , compact('painijat'));
-});
- 
-Route::get('/wrestlers/{wrestler}', function ($nimi) {
-
-	$painijat = DB::table('painijat')->find($nimi);
-
-	dd($painijat);
-
-    return view('wrestlers.show ' , compact('painijat'));
-});
- 
+Route::get('/wrestlers', 'WrestlersController@index');
+Route::get('/wrestlers/{wrestler}', 'WrestlersController@show');
