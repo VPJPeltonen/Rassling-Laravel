@@ -12,7 +12,7 @@
     @yield('content')
   </div>
   <div id='footer'>
-    @yield('footer')
+    @include('layouts.footer')
   </div>
 </body>
 </html>

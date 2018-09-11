@@ -1,5 +1,5 @@
 @extends ('layouts.main')
 
 @section ('content')
-  <h1> {{$wrestler->name}}</h1>
+  <h1> {{$match->result}}</h1>
 @endsection

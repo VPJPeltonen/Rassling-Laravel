@@ -1,11 +1,26 @@
 @extends ('layouts.main')
 
 @section ('content')
+    <h1>Championships (latest champion)</h1>
     <ul>
-      @foreach ($wrestlers as $wrestler)
+      @foreach ($championships as $championship)
+      <?php
+      $title =  $championship->name;
+      foreach ($championshipreigns as $reign){
+        if ($reign->championship == $title){
+          $champ = $reign->wrestler;
+          break;
+        }else{
+          $champ = 'none';
+        }
+      }
+      ?>
         <li>
-            <a href ='/wrestlers/{{ $wrestler->id }}'>
-              {{ $wrestler->name }}
+            <a href ='/championships/{{ $championship->id }}'>
+              <b>{{ $title }}</b>
+              (
+              {{ $champ }}
+              )
             </a>
         </li>
       @endforeach

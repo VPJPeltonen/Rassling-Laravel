@@ -11,20 +11,32 @@ body {
   border: 0px solid gray;
   background-color: #18121E;
 }
+#navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navi li {
+    float: left;
+}
+
+#navi li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navi li a:hover {
+    background-color: #111;
+}
+
 #navi, #footer{
   background-color: #233237;
   color: white;
-}
-#navi li {
-    display: inline;
-}
-#navi{
-  padding-top: 3px;
-  padding-bottom: 3px;
-  position: fixed;
-  top: 0;
-  height: 50px;
-  width: 95%;
 }
 #content {
     background-color: #984B34;
@@ -33,6 +45,26 @@ body {
     position: fixed;
     width: 95%;
     height: 90%;
+}
+#content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#content h1, h2{
+    padding: 8px 36px;
+}
+/* Change the link color on hover */
+#content li a:hover {
+    background-color: #A95C45;
+    color: white;
 }
 #content a{
   color: black;

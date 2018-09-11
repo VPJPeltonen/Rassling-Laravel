@@ -1,1 +1,4 @@
-<h2>Footer is here</h2>
+<footer>
+ <p>Created by: VPJP  Contact information: <a href="mailto:someone@example.com">
+ someone@example.com</a>.</p>
+</footer>

@@ -2,10 +2,10 @@
 
 @section ('content')
     <ul>
-      @foreach ($wrestlers as $wrestler)
+      @foreach ($tagteams as $tagteam)
         <li>
-            <a href ='/wrestlers/{{ $wrestler->id }}'>
-              {{ $wrestler->name }}
+            <a href ='/tagteams/{{ $tagteam->id }}'>
+              {{ $tagteam->name }}
             </a>
         </li>
       @endforeach

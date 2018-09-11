@@ -1,6 +1,7 @@
 <ul>
- <li><a href="default.asp">Home</a></li>
- <li><a href="news.asp">News</a></li>
- <li><a href="contact.asp">Contact</a></li>
- <li><a href="about.asp">About</a></li>
-</ul> 
+  <li><a href="/">Home</a></li>
+  <li><a href="/championships">Championships</a></li>
+  <li><a href="/matches">Matches</a></li>
+  <li><a href="/tagteams">Tag Teams</a></li>
+  <li><a href="/wrestlers">Wrestlers</a></li>
+</ul>
