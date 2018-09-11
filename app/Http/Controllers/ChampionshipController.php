@@ -10,8 +10,8 @@ class ChampionshipController extends Controller
 {
   public function index(){
     $championships = Championship::all();
-
-    return view('championships.index' , compact('championships'));
+    $championshipreigns = ChampionshipReign::all();
+    return view('championships.index' , compact('championships'), compact('$championshipreigns'));
   }
 
   public function show(Championship $championship){
