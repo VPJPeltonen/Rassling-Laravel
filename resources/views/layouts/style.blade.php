@@ -6,7 +6,7 @@ a{
 }
 body {
   margin: auto;
-  width: 95%;
+  width: 75%;
   padding: 5px;
   border: 0px solid gray;
   background-color: #18121E;
@@ -43,7 +43,7 @@ body {
     color: black;
     top: 55px;
     position: fixed;
-    width: 95%;
+    width: 75%;
     height: 90%;
 }
 #content ul {
@@ -52,7 +52,7 @@ body {
     padding: 0;
 }
 
-#content li a {
+#content li,p,a {
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -72,6 +72,7 @@ body {
 #footer{
   position: fixed;
   bottom: 0;
-  width: 95%;
+  width: 75%;
+  height: 75px;
 }
 </style>

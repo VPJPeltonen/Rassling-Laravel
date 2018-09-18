@@ -4,9 +4,25 @@
     <h2>Match Results</h2>
     <ul>
       @foreach ($matches as $match)
+        <?php
+        $result =  $match->result;
+        $rasslers = array();
+        foreach ($matchparticipations as $participation){
+          if ($participation->contest == $match->id){
+            $rasslers[] = $participation->wrestler;
+          }
+        }
+        ?>
         <li>
+          <!--
+          Lista otteluista, niiden osallistujista,mahdollinen mestaruus ja voittaja
+          -->
             <a href ='/matches/{{ $match->id }}'>
-              {{ $match->result }}
+              <?php
+              foreach ($rasslers as $rassler){
+                echo $rassler->name;
+              }
+               ?>
             </a>
         </li>
       @endforeach
